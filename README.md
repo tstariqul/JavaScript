@@ -1,1 +1,1 @@
-#Learn something new in js
+Learn something new in js.
