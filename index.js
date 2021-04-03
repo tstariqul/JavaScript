@@ -1,4 +1,5 @@
 // Import stylesheets
+//using strict
 import "./style.css";
 
 // Write Javascript code!
@@ -18,3 +19,7 @@ console.log(ageMom, ageTariqul);
 //templete string
 console.log(ageMom + " " + ageTariqul);
 console.log(2 ** 3);
+
+const year = [2020, 2021, 2011];
+const name = new Array("tar", "nam", "abul");
+console.log(name);
