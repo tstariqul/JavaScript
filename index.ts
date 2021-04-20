@@ -1,4 +1,7 @@
-const friend = {
+const friend: {
+  name: string;
+  age: number;
+} = {
   name: "Tanvir",
   age: 19
 };
