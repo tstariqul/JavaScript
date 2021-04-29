@@ -50,3 +50,14 @@ console.log(profile["age"](1998));
 console.log(profile.ageYear());
 console.log(profile.birthday);
 console.log(profile.license());
+
+const john ={
+  name: 'john',
+  mass: 50,
+  height: 65
+}
+const mark ={
+  name: 'mark',
+  mass: 50,
+  height: 65
+}
