@@ -54,10 +54,18 @@ console.log(profile.license());
 const john ={
   name: 'john',
   mass: 50,
-  height: 65
+  height: 65,
+  Bmijohn: function(){
+    return this.mass/this.height**2
+  }
 }
 const mark ={
   name: 'mark',
-  mass: 50,
-  height: 65
+  mass: 80,
+  height: 60,
+  Bmimark: function(){
+    return this.mass/this.height**2
+  }
 }
+console.log(john.Bmijohn()>mark.Bmimark()?`John bmi ${john.Bmijohn()} is heiger then mark ${mark.Bmimark()}`:`mark ${mark.Bmimark()} is heiger then John bmi ${john.Bmijohn()}`)
+
