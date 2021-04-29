@@ -11,9 +11,16 @@ console.log(tips, bills, total);
 const profile = {
   firstName: "Tariqul",
   lastName: "Islam",
-  age: 2021 - 1998,
+  year: 1998,
   occupation: "student",
-  friends: ["Tanvir", "Eran", "Shawon"]
+  friends: ["Tanvir", "Eran", "Shawon"],
+  age: function(date) {
+    return 2021 - date;
+  },
+  ageYear: function() {
+    console.log(this);
+    return 2021 - this.year;
+  }
 };
 console.log(profile);
 console.log(profile.firstName);
@@ -31,3 +38,6 @@ console.log(
     profile.friends.length
   } friends but best friend is ${profile.friends[1]}`
 );
+console.log(profile.age(1998));
+console.log(profile["age"](1998));
+console.log(profile.ageYear());
