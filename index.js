@@ -14,12 +14,19 @@ const profile = {
   year: 1998,
   occupation: "student",
   friends: ["Tanvir", "Eran", "Shawon"],
+  hasDriverLicense: true,
   age: function(date) {
     return 2021 - date;
   },
   ageYear: function() {
     console.log(this);
-    return 2021 - this.year;
+    this.birthday = 2021 - this.year;
+    return this.birthday;
+  },
+  license: function() {
+    return `${this.firstName} is a ${this.ageYear()} years old and he has ${
+      this.hasDriverLicense ? "a" : "no"
+    } driving license`;
   }
 };
 console.log(profile);
@@ -41,3 +48,5 @@ console.log(
 console.log(profile.age(1998));
 console.log(profile["age"](1998));
 console.log(profile.ageYear());
+console.log(profile.birthday);
+console.log(profile.license());
